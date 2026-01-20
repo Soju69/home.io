@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home-tab</title>
+</head>
+<body>
+    
+    <div class="discord-status mac-style">
+        <div class="mac-buttons">
+            <div class="mac-btn close"></div>
+            <div class="mac-btn minimize"></div>
+            <div class="mac-btn fullscreen"></div>
+        </div>
+        <div class="server-header">
+            <div class="server-icon">⛧</div>
+            <div class="server-info">
+                <div class="server-name">Chaos</div>
+                <div class="server-desc">Статистика сервера</div>
+            </div>
+        </div>
+    
+        <div class="status-grid">
+            <div class="status-item online">
+                <div class="status-text">Онлайн</div>
+                <div class="status-number" id="onlineCount">12</div>
+                <span class="status-dot online"></span>
+            </div>
+            <div class="status-item">
+                <div class="status-text">Всего</div>
+                <div class="status-number" id="totalCount">34</div>
+            </div>
+            <div class="status-item voice">
+                <div class="status-text">В голосе</div>
+                <div class="status-number" id="voiceCount">1</div>
+                <span class="status-dot voice"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-container">
+        <div class="time-block">
+            <div class="time-display">
+                <span id="hours">12</span>
+                <span class="time-separator">:</span>
+                <span id="minutes">34</span>
+            </div>
+        </div>
+        <div class="search">
+                <form action="https://www.google.com/search" style="width: 100%;">
+                    <input type="text" name="q" placeholder="Поиск в Google..." autocomplete="off">
+                </form>
+         </div>
+         <div class="sites-block" id="sitesBlock">
+            <a href="#" class="site-icon add-site" title="Добавить сайт">+</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
